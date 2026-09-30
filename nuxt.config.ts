@@ -28,37 +28,37 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1.0',
-      title: 'Le Minh Quoc Bao — Backend Developer',
+      title: 'Phạm Xuân Bắc — Backend Developer',
       meta: [
         {
           name: 'description',
           content:
-            'Le Minh Quoc Bao – Backend Developer specializing in Laravel, PHP, MySQL and RESTful API design. Fresher based in Can Tho City.',
+            'Phạm Xuân Bắc – Lập trình viên Backend chuyên sâu về Laravel, PHP, MySQL và thiết kế RESTful API. Fresher tại TP. Cần Thơ, Việt Nam.',
         },
         { name: 'theme-color', content: '#b80035' },
         { property: 'og:type', content: 'website' },
         {
           property: 'og:title',
-          content: 'Le Minh Quoc Bao — Backend Developer',
+          content: 'Phạm Xuân Bắc — Backend Developer',
         },
         {
           property: 'og:description',
           content:
-            'Backend Developer specializing in Laravel, PHP, MySQL and RESTful API design. Fresher based in Can Tho City.',
+            'Lập trình viên Backend chuyên sâu về Laravel, PHP, MySQL và thiết kế RESTful API. Fresher tại TP. Cần Thơ, Việt Nam.',
         },
-        { property: 'og:locale', content: 'en_US' },
+        { property: 'og:locale', content: 'vi_VN' },
         { name: 'twitter:card', content: 'summary_large_image' },
         {
           name: 'twitter:title',
-          content: 'Le Minh Quoc Bao — Backend Developer',
+          content: 'Phạm Xuân Bắc — Backend Developer',
         },
         {
           name: 'twitter:description',
           content:
-            'Backend Developer specializing in Laravel, PHP, MySQL and RESTful API design.',
+            'Lập trình viên Backend chuyên sâu về Laravel, PHP, MySQL và thiết kế RESTful API.',
         },
         { name: 'robots', content: 'index, follow' },
-        { name: 'author', content: 'Le Minh Quoc Bao' },
+        { name: 'author', content: 'Phạm Xuân Bắc' },
       ],
       link: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },

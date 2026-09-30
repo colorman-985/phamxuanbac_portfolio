@@ -4,12 +4,11 @@
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
       <div>
         <h2 id="skills-heading" class="font-headline-lg text-headline-lg font-semibold text-on-surface tracking-tight">
-          Skills &amp; Infrastructure Stack
+          Kỹ năng &amp; Hệ sinh thái Công nghệ
         </h2>
       </div>
       <p class="font-body-sm text-body-sm text-secondary max-w-sm">
-        Strict technical competence centered around enterprise PHP ecosystems, persistent stores, and distributed
-        toolings.
+        Năng lực kỹ thuật vững chắc xoay quanh hệ sinh thái PHP/Laravel, cơ sở dữ liệu và các công cụ phát triển hiện đại.
       </p>
     </div>
 

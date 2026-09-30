@@ -3,13 +3,13 @@
     class="sticky top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-md border-b border-surface-container shadow-sm"
     role="banner">
     <div class="max-w-[1140px] mx-auto px-4 md:px-6 flex justify-between items-center h-14">
-      <!-- Brand & Status -->
+        <!-- Brand & Status -->
       <div class="flex items-center gap-3">
         <a href="#hero"
           class="font-headline-sm text-headline-sm font-semibold tracking-tight text-on-surface flex items-center gap-2 hover:text-primary-container transition-colors duration-150"
-          aria-label="Le Minh Quoc Bao - Home">
+          aria-label="Phạm Xuân Bắc - Trang chủ">
           <span class="material-symbols-outlined text-primary-container">terminal</span>
-          <span>Le Minh Quoc Bao</span>
+          <span>Phạm Xuân Bắc</span>
         </a>
       </div>
 
@@ -24,7 +24,7 @@
       <!-- Trailing Actions -->
       <div class="flex items-center gap-3">
         <!-- GitHub -->
-        <a href="https://github.com/baolmq05" target="_blank" rel="noopener noreferrer"
+        <a :href="personalInfo.githubUrl" target="_blank" rel="noopener noreferrer"
           class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border border-outline-variant/40 hover:border-outline text-secondary hover:text-on-surface font-code-inline text-code-inline transition-all duration-150 active:scale-95 bg-surface-container-lowest shadow-sm"
           aria-label="GitHub profile">
           <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
@@ -35,10 +35,13 @@
         </a>
 
         <!-- Download CV -->
-        <a href="#contact"
-          class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-primary-container hover:bg-tertiary text-on-primary-container font-label-md text-label-md transition-all duration-150 active:scale-95 shadow-sm border border-tertiary"
+        <a :href="personalInfo.cvUrl"
+          download="Phạm Xuân Bắc - CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-primary-container hover:bg-tertiary text-on-primary-container font-label-md text-label-md transition-all duration-150 active:scale-95 shadow-sm border border-tertiary"
           id="nav-download-cv">
-          <span>Download CV</span>
+          <span>Tải CV</span>
           <span class="material-symbols-outlined text-[16px]">download</span>
         </a>
 
@@ -64,14 +67,15 @@
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
+import { personalInfo } from '~/data/portfolioData'
 
 const mobileOpen = ref(false)
 
 const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#projects', label: 'Projects' },
-  { href: '#contact', label: 'Contact' },
+  { href: '#about', label: 'Giới thiệu' },
+  { href: '#skills', label: 'Kỹ năng' },
+  { href: '#projects', label: 'Dự án' },
+  { href: '#contact', label: 'Liên hệ' },
 ]
 
 function toggleMobile() {

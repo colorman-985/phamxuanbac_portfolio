@@ -15,18 +15,18 @@ import { personalInfo } from '~/data/portfolioData'
 
 // SEO Meta Tags
 useSeoMeta({
-  title: 'Le Minh Quoc Bao — Backend Developer',
+  title: 'Phạm Xuân Bắc — Backend Developer',
   description:
-    'Le Minh Quoc Bao – Backend Developer specializing in Laravel, PHP, MySQL and RESTful API design. Fresher based in Can Tho City, Vietnam.',
-  ogTitle: 'Le Minh Quoc Bao — Backend Developer',
+    'Phạm Xuân Bắc – Lập trình viên Backend chuyên sâu về Laravel, PHP, MySQL và thiết kế RESTful API. Fresher tại TP. Cần Thơ, Việt Nam.',
+  ogTitle: 'Phạm Xuân Bắc — Backend Developer',
   ogDescription:
-    'Backend Developer specializing in Laravel, PHP, MySQL and RESTful API design. GPA 3.93 – FPT Polytechnic Highest Honor Graduate.',
+    'Lập trình viên Backend chuyên sâu về Laravel, PHP, MySQL và thiết kế RESTful API. GPA 3.92 – Tốt nghiệp Thủ khoa FPT Polytechnic.',
   ogType: 'website',
-  ogLocale: 'en_US',
+  ogLocale: 'vi_VN',
   twitterCard: 'summary_large_image',
-  twitterTitle: 'Le Minh Quoc Bao — Backend Developer',
+  twitterTitle: 'Phạm Xuân Bắc — Backend Developer',
   twitterDescription:
-    'Backend Developer specializing in Laravel, PHP, MySQL and RESTful APIs. Based in Can Tho City.',
+    'Lập trình viên Backend chuyên sâu về Laravel, PHP, MySQL và RESTful API. Làm việc tại TP. Cần Thơ.',
 })
 
 // Schema.org JSON-LD Structured Data

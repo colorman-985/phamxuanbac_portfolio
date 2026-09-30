@@ -4,7 +4,7 @@
       <!-- Heading -->
       <h2 id="contact-heading"
         class="font-headline-lg text-headline-lg font-semibold text-on-surface tracking-tight mb-2">
-        Contact Me
+        Liên hệ với tôi
       </h2>
       <!-- Contact Card -->
       <div class="p-6 rounded-2xl bg-surface-container-lowest border border-surface-variant/90 shadow-sm space-y-3">
@@ -25,9 +25,9 @@
           </div>
           <button id="copy-email-btn"
             class="px-3 py-1.5 rounded-lg border border-outline-variant/40 hover:border-outline text-secondary hover:text-on-surface font-label-mono text-label-mono bg-surface-container-lowest transition-all active:scale-95 shrink-0 ml-3 flex items-center gap-1.5"
-            @click="handleCopyEmail" :aria-label="`Copy email ${personalInfo.email} to clipboard`">
+            @click="handleCopyEmail" :aria-label="`Sao chép email ${personalInfo.email}`">
             <span class="material-symbols-outlined text-[14px]">{{ copied ? 'check' : 'content_copy' }}</span>
-            {{ copied ? 'Copied!' : 'Copy' }}
+            {{ copied ? 'Đã sao chép!' : 'Sao chép' }}
           </button>
         </div>
 
@@ -51,7 +51,7 @@
           </div>
           <a :href="personalInfo.githubUrl" target="_blank" rel="noopener noreferrer" id="contact-github-visit"
             class="px-3 py-1.5 rounded-lg border border-outline-variant/40 hover:border-outline text-secondary hover:text-on-surface font-label-mono text-label-mono bg-surface-container-lowest transition-all active:scale-95 shrink-0 ml-3">
-            Visit
+            Truy cập
           </a>
         </div>
 
@@ -76,7 +76,7 @@
           </div>
           <a :href="personalInfo.facebookUrl" target="_blank" rel="noopener noreferrer" id="contact-facebook-visit"
             class="px-3 py-1.5 rounded-lg border border-outline-variant/40 hover:border-outline text-secondary hover:text-on-surface font-label-mono text-label-mono bg-surface-container-lowest transition-all active:scale-95 shrink-0 ml-3">
-            Visit
+            Truy cập
           </a>
         </div>
       </div>
@@ -94,7 +94,7 @@ async function handleCopyEmail() {
   try {
     await navigator.clipboard.writeText(personalInfo.email)
     copied.value = true
-    showToast('Email address copied to clipboard!')
+    showToast('Đã sao chép địa chỉ email vào bộ nhớ tạm!')
     setTimeout(() => {
       copied.value = false
     }, 2500)
@@ -107,7 +107,7 @@ async function handleCopyEmail() {
     document.execCommand('copy')
     document.body.removeChild(el)
     copied.value = true
-    showToast('Email address copied to clipboard!')
+    showToast('Đã sao chép địa chỉ email vào bộ nhớ tạm!')
     setTimeout(() => (copied.value = false), 2500)
   }
 }

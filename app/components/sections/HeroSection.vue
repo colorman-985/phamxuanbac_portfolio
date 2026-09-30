@@ -14,7 +14,7 @@
         <!-- Heading -->
         <div class="space-y-2">
           <p class="font-code-inline text-code-inline text-primary-container font-medium tracking-wide">
-            HELLO WORLD, I AM
+            XIN CHÀO, TÔI LÀ
           </p>
           <h1 id="hero-heading"
             class="font-headline-xl md:font-display text-headline-xl md:text-display text-on-surface tracking-tight font-semibold">
@@ -29,7 +29,6 @@
               {{ personalInfo.level }}
             </span>
           </div>
-
         </div>
 
         <!-- Bio -->
@@ -39,10 +38,10 @@
 
         <!-- Action Buttons -->
         <div class="flex flex-wrap items-center gap-3 pt-2">
-          <a :href="personalInfo.cvUrl" download="Lê Minh Quốc Bảo - CV.pdf" target="_blank" rel="noopener noreferrer"
+          <a :href="personalInfo.cvUrl" download="Phạm Xuân Bắc - CV.pdf" target="_blank" rel="noopener noreferrer"
             id="hero-download-cv"
             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-primary-container hover:bg-tertiary text-on-primary-container font-label-md text-label-md transition-all duration-150 border border-tertiary shadow-sm active:scale-95">
-            <span>Download CV</span>
+            <span>Tải CV</span>
             <span class="material-symbols-outlined text-[18px]">download</span>
           </a>
           <a :href="personalInfo.githubUrl" target="_blank" rel="noopener noreferrer" id="hero-github"
@@ -59,10 +58,10 @@
         <!-- Telemetry Bar -->
         <div
           class="pt-4 flex flex-wrap items-center gap-4 text-secondary font-label-mono text-label-mono border-t border-surface-container/60 w-full max-w-md">
-          <span class="flex items-center gap-1.5">
+          <!-- <span class="flex items-center gap-1.5">
             <span class="text-primary-container"></span>
             {{ personalInfo.availability }}
-          </span>
+          </span> -->
           <span class="text-outline-variant hidden sm:inline">|</span>
           <span class="flex items-center gap-1">
             <span class="material-symbols-outlined text-[14px] text-secondary">location_on</span>
@@ -76,14 +75,15 @@
         <div
           class="w-full max-w-sm rounded-2xl bg-surface-container-lowest p-3 border border-surface-variant/70 shadow-sm relative group hover:border-outline-variant transition-all duration-200">
           <!-- Window Controls Header -->
-          <div
+          <!-- <div
+            v-if="personalInfo.status"
             class="flex items-center justify-between px-2 pb-3 pt-1 border-b border-surface-container font-label-mono text-label-mono text-secondary">
             <div class="flex items-center gap-1.5">
             </div>
             <span class="text-primary-container font-medium">
-              status: {{ personalInfo.status }}
+              trạng thái: {{ personalInfo.status }}
             </span>
-          </div>
+          </div> -->
 
           <!-- Photo Frame -->
           <div
@@ -92,19 +92,20 @@
               class="w-full h-full object-cover object-center grayscale-[15%] contrast-105 group-hover:grayscale-0 transition-all duration-300"
               loading="eager" width="400" height="400" />
             <!-- Floating Badge -->
-            <div
+            <!-- <div
+              v-if="personalInfo.status"
               class="absolute bottom-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1 rounded-full border border-surface-variant/80 flex items-center gap-2 shadow-sm">
               <span class="font-label-mono text-label-mono text-on-surface font-medium">
-                Available for Work
+                {{ personalInfo.status }}
               </span>
-            </div>
+            </div> -->
           </div>
 
           <!-- Card Footer -->
           <div
             class="mt-3 p-2.5 rounded-lg bg-surface-container-low/60 border border-surface-container flex items-center justify-between font-label-mono text-label-mono text-secondary">
-            <span class="text-on-surface font-medium">Stack: {{ personalInfo.stack }}</span>
-            <span class="text-primary-container font-semibold">{{ personalInfo.latency }}</span>
+            <span class="text-on-surface font-medium">Công nghệ: {{ personalInfo.stack }}</span>
+            <!-- <span v-if="personalInfo.latency" class="text-primary-container font-semibold">{{ personalInfo.latency }}</span> -->
           </div>
         </div>
       </div>

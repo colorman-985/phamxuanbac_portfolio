@@ -19,7 +19,7 @@
         <!-- Divider -->
         <div class="h-px bg-surface-container my-2" />
 
-        <a href="https://github.com/baolmq05" target="_blank" rel="noopener noreferrer"
+        <a :href="personalInfo.githubUrl" target="_blank" rel="noopener noreferrer"
           class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-secondary hover:text-on-surface hover:bg-surface-container transition-all duration-150 font-body-sm text-body-sm"
           @click="$emit('close')">
           <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
@@ -30,12 +30,12 @@
         </a>
 
         <a :href="personalInfo.cvUrl"
-          download="Lê Minh Quốc Bảo - CV.pdf"
+          download="Phạm Xuân Bắc - CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-primary-container hover:bg-tertiary text-on-primary-container font-label-md text-label-md transition-all duration-150 border border-tertiary mt-2"
           @click="$emit('close')">
-          Download CV
+          Tải CV
           <span class="material-symbols-outlined text-[16px]">download</span>
         </a>
       </nav>
@@ -54,10 +54,10 @@ defineEmits<{
 }>()
 
 const navLinks = [
-  { href: '#about', label: 'About', icon: 'person' },
-  { href: '#skills', label: 'Skills', icon: 'code' },
-  { href: '#projects', label: 'Projects', icon: 'folder_open' },
-  { href: '#contact', label: 'Contact', icon: 'mail' },
+  { href: '#about', label: 'Giới thiệu', icon: 'person' },
+  { href: '#skills', label: 'Kỹ năng', icon: 'code' },
+  { href: '#projects', label: 'Dự án', icon: 'folder_open' },
+  { href: '#contact', label: 'Liên hệ', icon: 'mail' },
 ]
 </script>
 

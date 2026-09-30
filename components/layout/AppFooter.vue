@@ -4,32 +4,35 @@
       <!-- Brand -->
       <div class="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
         <span class="font-headline-sm text-headline-sm font-bold text-on-surface">
-          Le Minh Quoc Bao
+          Phạm Xuân Bắc
         </span>
         <span class="hidden sm:inline text-secondary font-label-mono text-label-mono">•</span>
         <span class="font-body-sm text-body-sm text-secondary">
-          © {{ currentYear }} Le Minh Quoc Bao • Engineered for High-Throughput Reliability
+          © {{ currentYear }} Phạm Xuân Bắc • Hệ thống kiến trúc chuẩn mực & hiệu năng cao
         </span>
       </div>
 
       <!-- Social Links -->
       <nav class="flex items-center gap-5 font-body-sm text-body-sm" aria-label="Footer links">
-        <a href="https://github.com/baolmq05" target="_blank" rel="noopener noreferrer"
+        <a :href="personalInfo.githubUrl" target="_blank" rel="noopener noreferrer"
           class="text-secondary hover:text-on-surface transition-colors duration-150" aria-label="GitHub profile">
           GitHub
         </a>
-        <a href="https://www.facebook.com/bao.leminh.3348/" target="_blank" rel="noopener noreferrer"
+        <a :href="personalInfo.facebookUrl" target="_blank" rel="noopener noreferrer"
           class="text-secondary hover:text-on-surface transition-colors duration-150" aria-label="Facebook profile">
           Facebook
         </a>
-        <a href="mailto:baolmq05@gmail.com" class="text-secondary hover:text-on-surface transition-colors duration-150"
+        <a :href="'mailto:' + personalInfo.email" class="text-secondary hover:text-on-surface transition-colors duration-150"
           aria-label="Send email">
-          Email Me
+          Gửi Email
         </a>
-        <a href="#contact"
+        <a :href="personalInfo.cvUrl"
+          download="Phạm Xuân Bắc - CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           class="text-primary-container font-medium underline underline-offset-4 hover:text-tertiary transition-colors duration-150"
           aria-label="Download CV">
-          Download CV
+          Tải CV
         </a>
       </nav>
     </div>
@@ -37,5 +40,7 @@
 </template>
 
 <script setup lang="ts">
+import { personalInfo } from '~/data/portfolioData'
+
 const currentYear = new Date().getFullYear()
 </script>

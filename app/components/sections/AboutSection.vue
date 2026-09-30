@@ -4,7 +4,7 @@
       <!-- Heading -->
       <h2 id="about-heading"
         class="font-headline-lg text-headline-lg font-semibold text-on-surface mb-6 tracking-tight">
-        Engineered for Clean Schemas &amp; System Reliability
+        Thiết kế Kiến trúc Chuẩn mực &amp; Hệ thống Bền bỉ
       </h2>
 
       <!-- Bio -->
